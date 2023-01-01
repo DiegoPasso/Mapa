@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Conf">
+
+    <ImageView
+        android:id="@+id/voltar2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="331dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <View
+        android:id="@+id/boxView"
+        style="@style/ContainerComponents"
+        android:layout_width="303dp"
+        android:layout_height="534dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/container_components"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="CONFIGURAÇÕES"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/TextTypeMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="TIPO DO MAPA"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <RadioGroup
+        android:id="@+id/GroupMP"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextTypeMap">
+
+        <RadioButton
+            android:id="@+id/RadioVT"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="Vetorial"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/RadioIS"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="Imagem de satélite"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/TextInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="INFORMAÇÕES"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GroupMP" />
+
+    <View
+        android:id="@+id/containerInfo"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextInfo" />
+
+    <Switch
+        android:id="@+id/btnSW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:textColorLink="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/containerInfo"
+        app:layout_constraintStart_toStartOf="@+id/containerInfo"
+        app:layout_constraintTop_toBottomOf="@+id/TextInfo" />
+
+    <TextView
+        android:id="@+id/Trafego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="5dp"
+        android:text="Tráfego:"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/containerInfo"
+        app:layout_constraintTop_toBottomOf="@+id/TextInfo" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:text="Desligado"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnSW"
+        app:layout_constraintStart_toEndOf="@+id/Trafego"
+        app:layout_constraintTop_toBottomOf="@+id/TextInfo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="30dp"
+        android:text="Ligado"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/containerInfo"
+        app:layout_constraintStart_toEndOf="@+id/btnSW"
+        app:layout_constraintTop_toBottomOf="@+id/TextInfo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSalvar"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/botton"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

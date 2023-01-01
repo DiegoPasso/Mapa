@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mapa</string>
+    <string name="entrar">Entrar</string>
+    <string name="text_cadastro">Registre-se aqui</string>
+    <string name="title_cadastro">Cadastro</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_maps">Maps</string>
+</resources>

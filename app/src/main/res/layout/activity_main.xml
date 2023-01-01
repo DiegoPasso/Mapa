@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mapaicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="34dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+    <ImageView
+        android:id="@+id/perfilicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="37dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/mapaicon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_user" />
+
+    <ImageView
+        android:id="@+id/configicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapaicon"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "955325838784",
+    "project_id": "wap1-5a3ae",
+    "storage_bucket": "wap1-5a3ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955325838784:android:2d6e820203f8b62d190425",
+        "android_client_info": {
+          "package_name": "com.diego.WAP"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955325838784-mm4rrmognpijndu5sbvuo535gipnv9il.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgWsJjt0T8tFhW5NJt5FcWzbAVxOIaFwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955325838784-mm4rrmognpijndu5sbvuo535gipnv9il.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
